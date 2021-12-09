@@ -1,0 +1,9 @@
+{
+  "experimentalSessionSupport": true,
+  "env" : {
+    "username" : "testuser",
+    "password" : "Test@1234",
+    "baseUrl": "https://env821873.eu-latest.cumulocity.com/apps/cockpit/index.html#/",
+    "baseaUrl": "https://kg.latest.stage.c8y.io"
+  }
+}
