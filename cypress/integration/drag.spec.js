@@ -9,14 +9,7 @@ describe('My First Test', () => {
         cy.get('#password').type('Test@1234')
         cy.contains('Log in').click()
     })
-
-    //after hook is needed to delete Applications widget.
-    // Incase if the test fails at other place, and application widget is present then manually needs to be deleted before rerunning
-    after(() => {
-        cy.wait(10000)
-        cy.get('.applications .btnIcon').click()
-        cy.get('[title="Remove widget"]').click()
-    })
+    
 
     it('finds the content "type"', () => {
         cy.get('#page-toolbar').contains('Add widget').click()
@@ -31,6 +24,10 @@ describe('My First Test', () => {
             .trigger('mousedown', { which: 1 })
             .trigger('mousemove', {clientX: 700, clientY: 500})
             .trigger('mouseup', {force: true})
+        cy.wait(10000)
+        cy.get('.applications .btnIcon').click()
+        cy.get('[title="Remove widget"]').click()
+
     })
 })
 
