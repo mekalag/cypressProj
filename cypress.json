@@ -1,8 +1,10 @@
 {
   "experimentalSessionSupport": true,
-  "baseUrl": "https://env821873.eu-latest.cumulocity.com/apps/cockpit/index.html#/",
+  "baseUrl": "https://env849955.eu-latest.cumulocity.com",
   "env" : {
-    "username" : "testuser",
+    "username" : "test",
     "password" : "Test@1234"
-  }
+  },
+  "viewportWidth": 1920,
+  "viewportHeight": 1080
 }
